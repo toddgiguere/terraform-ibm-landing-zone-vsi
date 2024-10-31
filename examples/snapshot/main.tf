@@ -88,4 +88,6 @@ module "slz_vsi" {
   # if specifying a group ID, snapshot IDs will be automatically determined from group using system labels
   snapshot_consistency_group_id = var.snapshot_consistency_group_id
   # boot_volume_snapshot_id = <you can also specify a specific snapshot ID if requried>
+  use_legacy_network_interface     = false
+  number_of_secondary_reserved_ips = 2
 }
